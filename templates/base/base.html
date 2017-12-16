@@ -1,0 +1,38 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'account.css'%}">
+    <title> Hello</title>
+
+</head>
+<body>
+<div class="general-container">
+<div class="container top-container">
+    <div class="form-row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h1 class="title" align="center">You can here authorize</h1>
+            <div>
+                <form action="" method="post" class="form-inline text-center">{% csrf_token %}
+                    <div class="form-group">
+
+                       <label> Your email  <input name="{{ form.user.name}}" class="form-control"></label>
+                    </div>
+                    <div class="form-group">
+
+                     <label>Your name  <input  name="{{ form.name.name }}" class="form-control"></label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Send</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+ </div>
+</body>
+</html>

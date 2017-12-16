@@ -1,0 +1,21 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'styles.css'%}">
+
+
+</head>
+<body>
+<div class="wrapper">
+    {% include 'navbar.html' %}
+    {% block content %}
+    {% endblock content %}
+    {% include 'footer.html' %}
+ </div>
+</body>
+</html>
