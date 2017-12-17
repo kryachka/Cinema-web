@@ -28,4 +28,6 @@ urlpatterns = [
     url(r'^account/', include("account.urls")),
     url(r'^products', include("products.urls")),
     url(r'^orders', include("orders.urls")),
-]
+]\
+              + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
++ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
