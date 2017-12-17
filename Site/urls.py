@@ -23,7 +23,9 @@ from account import views
 
 admin.autodiscover()
 urlpatterns = [
-    url(r'^home', views.home, name='home'),
+    url(r'^$', views.home, name='home'),
+    url(r'akcii/', views.akcii, name="akcii"),
+    url(r'categories/', views.categorii, name="categories"),
     url(r'^admin/', admin.site.urls),
     url(r'^account/', include("account.urls")),
     url(r'^products', include("products.urls")),

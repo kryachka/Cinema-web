@@ -4,9 +4,14 @@
      background-color:whitesmoke;
  }
  .section-top{
-     margin: 20px;
+     margin: 0;
  }
-
+.navbar{
+    width: 100%;
+    border: 0;
+    background-color: black;
+    margin-bottom: 0;
+}
  .product-description-tabs{
     padding: 10px;
 }
@@ -15,7 +20,7 @@
 }
 
 .container{
-    padding-left: 0.001px;
+    padding-left: 0;
 
     width: auto;
     margin-left: 5px;
@@ -27,9 +32,9 @@
     background-color: black;
     float: left;
     height: 50px;
-    padding: 0.01px;
+    padding: 0;
     font-size: 18px;
-    line-height: 20px;
+    line-height:0;
 }
 
  .col-lg-3{  position: relative;
@@ -92,8 +97,8 @@
 }
 .logo-box {
   float: left;
-  margin-top: 0.01px;
-  margin-left: 0.01px;
+  margin-top: 0;
+  margin-left: 0;
   display: block;
   text-align: center;
 }
@@ -104,18 +109,5 @@
   height: 100px;
   background: url('../img/logo.jpg') 0 0 no-repeat;
   font-size: 0;
-  margin-bottom: 7px;
+  margin-bottom:0;
 }
-#Top .logo-box .logo-text {
-  clear: both;
-  float: left;
-  font-size: 12px;
-  color: #fff;
-}
-#Top .logo-box .logo-text span {
-  display: block;
-  font-size: 12px;
-  color: #fff;
-  letter-spacing: -0.8px;
-  font-weight: 700;
-  margin-bottom: 5px;}
