@@ -19,7 +19,7 @@ def account(request):
 def home(request):
     products_images=ProductImage.objects.filter(is_active=True, is_main=True)
     return render(request, 'base/home.html', locals())
-def categorii(request):
+def categories(request):
     products_images = ProductImage.objects.filter(is_active=True, is_main=True)
     products_images_horrors = products_images.filter(product__category__id=1)
     products_images_cartoons = products_images.filter(product__category__id=2)
