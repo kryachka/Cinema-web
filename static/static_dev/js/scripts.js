@@ -53,38 +53,44 @@ $(document).ready(function() {
         var product_id = submit_btn.data("product_id");
         var product_name = submit_btn.data("name");
         var price = submit_btn.data("price");
-        console.log(product_id );
+        console.log(product_id);
         console.log(product_name);
 
+        $('.basket-items ul').append('<li>'+product_name+', '+nmb+ 'шт. '+ 'по' +price+ 'грн  '+
+            '<a class="delete-item" href="">X</a>'+
+            '</li>');
 
-    })
 
-});
+    });
 
-   /* function showingBasket(){
+    function showingBasket() {
         $('.basket-items').removeClass('hidden');
-    };
+    }
 
-    //$('.basket-container').on('click', function(e){
-    //    e.preventDefault();
-    //    showingBasket();
-    //});
+    $('.basket-container').on('click', function (e) {
+        e.preventDefault();
+        showingBasket();
+    });
 
-     $('.basket-container').mouseover(function(){
-         showingBasket();
-     });
+    $('.basket-container').mouseover(function () {
+        showingBasket();
+    });
 
-     //$('.basket-container').mouseout(function(){
-     //    showingBasket();
-     //});
+    $('.basket-container').mouseout(function () {
+        $('.basket-items').addClass('hidden');
+        // showingBasket();
+    });
+
 
      $(document).on('click', '.delete-item', function(e){
          e.preventDefault();
-         product_id = $(this).data("product_id")
-         nmb = 0;
-         basketUpdating(product_id, nmb, is_delete=true)
+         $(this).closest('li').remove();
+         //e.preventDefault();
+         //product_id = $(this).data("product_id")
+         //nmb = 0;
+         //basketUpdating(product_id, nmb, is_delete=true)
      });
-
+});/*
     function calculatingBasketAmount(){
         var total_order_amount = 0;
         $('.total-product-in-basket-amount').each(function() {
