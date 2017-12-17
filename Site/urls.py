@@ -28,4 +28,5 @@ urlpatterns = [
     url(r'^account/', include("account.urls")),
     url(r'^products', include("products.urls")),
     url(r'^orders', include("orders.urls")),
+    url(r'^authorization/', include('Autorisation.urls')),
 ]

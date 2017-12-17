@@ -11,7 +11,9 @@ def account(request):
         print(form.cleaned_data)
         data=form.cleaned_data
         print(data['name'])
-
+        new_form = form.save(commit=False)
+        new_form.set_password(
+            form.cleaned_data['password'])
         new_form=form.save(
 
         )
