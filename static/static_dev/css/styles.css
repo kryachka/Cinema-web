@@ -6,27 +6,116 @@
  .section-top{
      margin: 20px;
  }
- .product-item{
-     height: 215px;
-     background-color: white;
-     border: 1px solid snow;
-     position: relative;
-     padding: 5px;
-     text-align: center;
- }
- .add-to-cart-btn{
-     position: absolute;
-     bottom: 15px;
-     left: 50px;
- }
- .col-lg-3{
-         position: relative;
+
+ .product-description-tabs{
+    padding: 10px;
+}
+.text{
+    background-color: black;
+}
+
+.container{
+    padding-left: 0.001px;
+
+    width: auto;
+    margin-left: 5px;
+}
+.section{
+    padding: 50px 0;
+}
+.navbar-brand{
+    background-color: black;
+    float: left;
+    height: 50px;
+    padding: 0.01px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+ .col-lg-3{  position: relative;
     min-height: 1px;
     padding-right: 30px;
     padding-left: 30px;
 }
  .img-responsive{
-     display: block;
-     max-width: 100%;
-    height: 200px;
+  position: relative;
+    height: 300px;
  }
+ .footer{
+         position: relative;
+    margin-top: 10px;
+    height: 180px;
+    clear: both;
+    background-color: black;
+}
+
+ .product-item{
+    height: 500px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    position: relative;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.add-to-card-btn{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.discount-container{
+    position: absolute;
+    top: 30%;
+    background: #55e073;
+    width: 30%;
+    color: white;
+    font-weight: 700;
+    padding: 3px;
+}
+.navbar-collapse{
+    background-color: black;
+}
+
+.section-delivery{
+    height: 300px;
+    background-color: darkseagreen;
+    text-align: center;
+    color: white;
+}
+
+.product-image-item{
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.logo-box {
+  float: left;
+  margin-top: 0.01px;
+  margin-left: 0.01px;
+  display: block;
+  text-align: center;
+}
+#Top .logo-box .logo-bg {
+  display: block;
+  margin: auto;
+  width: 143px;
+  height: 100px;
+  background: url('../img/logo.jpg') 0 0 no-repeat;
+  font-size: 0;
+  margin-bottom: 7px;
+}
+#Top .logo-box .logo-text {
+  clear: both;
+  float: left;
+  font-size: 12px;
+  color: #fff;
+}
+#Top .logo-box .logo-text span {
+  display: block;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: -0.8px;
+  font-weight: 700;
+  margin-bottom: 5px;}
