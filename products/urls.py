@@ -1,13 +1,11 @@
 
-
 from django.conf.urls import url, include
 from django.contrib import admin
-from .import views
+from products import views
 
-
-admin.autodiscover()
 urlpatterns = [
-
-  #  url(r'^login/', views.account, name="account"),
-
+    # url(r'^landing123/', views.landing, name='landing'),
+    url(r'^product/(?P<product_id>\w+)/$', views.product, name='product'),
 ]
+admin.autodiscover()
+

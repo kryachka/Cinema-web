@@ -49,13 +49,23 @@ margin-left: 20px;
     padding-left: 30px;
 }
  .img-responsive{
+     margin-top: 30px;
   position: relative;
     height: 300px;
  }
+ .wrapper{
+    min-height: 100%;
+}
+
+.wrapper-content{
+    overflow: auto;
+    padding-bottom: 180px; /* must be same height as the footer */
+}
+
  .footer{
-         position: relative;
+     position: relative;
     margin-top: 10px;
-    height: 180px;
+    height:180px;
     clear: both;
     background-color: black;
 }
